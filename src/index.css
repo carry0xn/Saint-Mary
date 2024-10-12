@@ -1,13 +1,275 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #00247d;
+  font-family: 'Arial', sans-serif;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/*HOME*/
+
+.title {
+  font-size: 2.5rem; 
+  text-align: center; 
+  margin: 30px 0; 
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #f8f9fa; 
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; /* Asegura que todos los elementos estén a la misma altura */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Asegura que el logo esté alineado verticalmente */
+}
+
+.logo-container img {
+  height: 150px; 
+}
+
+.iconos_href{
+  display: flex;
+}
+
+.nav-items, .nav-icons {
+  display: flex;
+  align-items: center; /* Alinea los ítems e iconos verticalmente */
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-items a, .nav-icons a {
+  color: #00247d; 
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.nav-icons a {
+  width: auto;
+  font-size: 30px; /* Tamaño de los iconos */
+  color: #ffffff; /* Color de los iconos */
+  background-color: #00247d; /* Color de fondo del círculo */
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 15px; /* Espacio entre los iconos */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-icons a:hover {
+  background-color: #001855; /* Cambia el color de fondo al pasar el mouse */
+  color: #fff; /* Cambia el color del ícono al pasar el mouse */
+}
+
+.nav-items a:hover, .nav-icons a:hover {
+  color: #C8102E;
+}
+
+h2 {
+  color: #00247d; 
+  text-align: center;
+  margin: 20px 0;
+}
+
+/*CONTACTO*/
+/* Formulario */
+
+form {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; 
+  margin: 20px auto; 
+  gap: 15px; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #00247d; 
+  color: #000000; 
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #001855;
+}
+
+/* CURSOS */
+
+.nueva_seccion{
+  max-width: 100%;
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #f9f9f9; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  margin: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.box {
+  width: 45%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease; 
+  margin: 20px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  transition: background-color 0.3s ease;
+  z-index: 1; /* Para estar por encima de la imagen */
+}
+
+.box:hover {
+  transform: scale(1.1); 
+}
+
+.box h3 {
+  position: relative;
+  z-index: 2; /* Para que el texto esté por encima de la capa y la imagen */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box span {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover span {
+  display: block;
+}
+
+.box:hover h3 {
+  opacity: 0; 
+}
+
+.box:nth-child(1) {
+  background-image: url('./img/niños.jpg'); /* Imagen para "Niños" */
+}
+.box:nth-child(2) {
+  background-image: url('./img/pre_adolescentes.jpg'); /* Imagen para "Pre-Adolescentes" */
+}
+.box:nth-child(3) {
+  background-image: url('./img/adolescentes.jpg'); /* Imagen para "Adolescentes" */
+}
+.box:nth-child(4) {
+  background-image: url('./img/adultos.jpg'); /* Imagen para "Adultos" */
+}
+
+.box h3 {
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.box:hover h3 {
+  opacity: 0; 
+}
+
+.box span {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+
+.box:hover span {
+  display: block;
+}
+
+.footer{
+  padding: 50px 20px;
+}
+
+.footer-items {
+  width: auto;
+  gap: 15px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.footer-items a{
+  font-size: 30px; /* Tamaño de los iconos */
+  color: #ffffff; /* Color de los iconos */
+  background-color: #C8102E; /* Color de fondo del círculo */
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 15px; /* Espacio entre los iconos */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-items a:hover{
+  color:#00247d
 }
