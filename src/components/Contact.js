@@ -6,7 +6,7 @@ function Contact() {
   return (
     <section class="nueva_seccion">
       <div >
-      <h2>Contáctanos</h2>
+      <h2 className="title">Contáctanos</h2>
           
           { }
           <Formulario />
