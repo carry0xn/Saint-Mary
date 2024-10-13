@@ -1,5 +1,5 @@
 import React from 'react'
-import imagen from '../img/img3.jpg'
+import imagen from '../img/img3.jpeg'
 import Courses from './Courses'
 import Contact from './Contact'
 

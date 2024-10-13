@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Asegúrate de importar useState
+import React, { useState } from 'react'
 
 import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom'
 import Home from './components/Home'
@@ -8,7 +8,7 @@ import Biblioteca from './components/Biblioteca'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import logo from './img/SAINT_MARY-removebg-preview.png'
+import logo from './img/SAINT_MARY.png'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false); // Agrega el estado para manejar el menú

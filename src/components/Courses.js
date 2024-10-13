@@ -1,8 +1,8 @@
 import React from 'react'
-import pre_adolescente from '../img/pre_adolescentes.jpg'
+import pre_adolescente from '../img/preadolescentes.jpg'
 import ninios from '../img/niños.jpg'
 import adolescentes from '../img/adolescentes.jpg'
-import adultos from '../img/adultos.jpg'
+import adultos from '../img/adultos.webp'
 import { Link } from 'react-router-dom';
 
 function Courses() {
