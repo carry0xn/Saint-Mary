@@ -11,9 +11,9 @@ function Home() {
         <p>¡Aprende inglés con nosotros!</p>
             <img src={imagen} alt="English Institute"/>
         
-      {/* Formulario de Courses */}
+      {}
       <Courses />
-      {/* Formulario de contacto */}
+      {}
       <Contact />
       </div>
     </div>

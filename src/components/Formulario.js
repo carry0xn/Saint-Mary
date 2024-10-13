@@ -57,7 +57,7 @@ function Formulario() {
             onChange={handleChange}
             required
           >
-            <option value="">Seleccione una opción</option> {/* Opción vacía al inicio */}
+            <option value="">Seleccione una opción</option> { }
             <option value="menor de 5">Menor de 5</option>
             <option value="6 a 12">De 6 a 12</option>
             <option value="12 a 18">De 12 a 18</option>

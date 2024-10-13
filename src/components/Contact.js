@@ -8,9 +8,9 @@ function Contact() {
       <div >
       <h2>Contáctanos</h2>
           
-          {/* Formulario de contacto */}
+          { }
           <Formulario />
-          {/* Formulario de Map */}
+          { }
           <Map />
       </div>
     </section>
