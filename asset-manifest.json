@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Saint-Mary/static/css/main.20c42296.css",
+    "main.js": "/Saint-Mary/static/js/main.3b28a0a8.js",
+    "static/media/Superior.png": "/Saint-Mary/static/media/Superior.a68ecbaae6075b081e06.png",
+    "static/media/Second_Year.png": "/Saint-Mary/static/media/Second_Year.1a09b4c233bfa6406b59.png",
+    "static/media/Fourth_Year.png": "/Saint-Mary/static/media/Fourth_Year.16d948ae914e50c7d4c8.png",
+    "static/media/Fifth_Year.png": "/Saint-Mary/static/media/Fifth_Year.57ef0743780d97a6b6ac.png",
+    "static/media/Third_Year.png": "/Saint-Mary/static/media/Third_Year.185f43604f42aa271fe4.png",
+    "static/media/SAINT_MARY.png": "/Saint-Mary/static/media/SAINT_MARY.c4c35f2d0ba915ae6de7.png",
+    "static/media/img3.jpeg": "/Saint-Mary/static/media/img3.7924320b0c1ae0383b80.jpeg",
+    "static/media/adultos.webp": "/Saint-Mary/static/media/adultos.564421299451205c217b.webp",
+    "static/media/Teens_3.png": "/Saint-Mary/static/media/Teens_3.87555d6cbf53bbe1b3dd.png",
+    "static/media/Teens_2.png": "/Saint-Mary/static/media/Teens_2.35a40947dbb767d7ec32.png",
+    "static/media/Teens_1.png": "/Saint-Mary/static/media/Teens_1.caaa658fa1217a943104.png",
+    "static/media/adolescentes.jpg": "/Saint-Mary/static/media/adolescentes.556692822bf82cb2564b.jpg",
+    "static/media/Kinder.png": "/Saint-Mary/static/media/Kinder.94c1e34684cc92fb1e6a.png",
+    "static/media/Pre_Kinder.png": "/Saint-Mary/static/media/Pre_Kinder.fb3095962f8cbb4244f2.png",
+    "static/media/niños.jpg": "/Saint-Mary/static/media/niños.5ba7899ed5a9136e7be0.jpg",
+    "static/media/preadolescentes.jpg": "/Saint-Mary/static/media/preadolescentes.e980bd4f0f87003fd7b0.jpg",
+    "static/media/Kids_3.png": "/Saint-Mary/static/media/Kids_3.2da77636a546d16a032f.png",
+    "static/media/Kids_5.png": "/Saint-Mary/static/media/Kids_5.b546482074adcf50e71d.png",
+    "static/media/Kids_2.png": "/Saint-Mary/static/media/Kids_2.edc18289e1125d07e42f.png",
+    "static/media/Kids_4.png": "/Saint-Mary/static/media/Kids_4.b95e61e96e5445e9f835.png",
+    "static/media/Kids_1.png": "/Saint-Mary/static/media/Kids_1.4f9541562925aaad9df3.png",
+    "index.html": "/Saint-Mary/index.html",
+    "main.20c42296.css.map": "/Saint-Mary/static/css/main.20c42296.css.map",
+    "main.3b28a0a8.js.map": "/Saint-Mary/static/js/main.3b28a0a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20c42296.css",
+    "static/js/main.3b28a0a8.js"
+  ]
+}
