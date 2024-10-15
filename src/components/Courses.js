@@ -3,7 +3,7 @@ import pre_adolescente from '../img/preadolescentes.jpg'
 import ninios from '../img/niños.jpg'
 import adolescentes from '../img/adolescentes.jpg'
 import adultos from '../img/adultos.webp'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function Courses() {
     const handleScroll = (id) => {
@@ -13,8 +13,8 @@ function Courses() {
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
-        }, 0); // Usa un timeout para asegurar que el cambio de ruta se complete antes de desplazarte
-    };
+        }, 0) // Usa un timeout para asegurar que el cambio de ruta se complete antes de desplazarte
+    }
     
   return (
     <section className="nueva_seccion">
