@@ -1,8 +1,9 @@
 import React from 'react'
-import imagen from '../img/img3.jpeg'
+/*Js*/
 import Courses from './Courses'
 import Contact from './Contact'
-
+/*Imagenes*/
+import imagen from '../img/img3.jpeg'
 function Home() {
   return (
     <div>

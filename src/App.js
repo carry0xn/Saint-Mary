@@ -1,23 +1,24 @@
 import React, { useState } from 'react'
-
-import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+/*Js*/
 import Home from './components/Home'
 import Courses from './components/Courses'
 import Contact from './components/Contact'
 import Biblioteca from './components/Biblioteca'
+/*Font*/ 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+/*Imagenes*/
 import logo from './img/SAINT_MARY.png'
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false); // Agrega el estado para manejar el menú
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-
+    setIsOpen(!isOpen)
+  }
   return (
     <Router>
       <nav className="navbar">
@@ -25,7 +26,7 @@ function App() {
           <Link to="/home"><img src={logo} alt="English Institute Logo" className="logo" /></Link>
         </div>
         <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
-          {isOpen ? 'X' : '☰'} {/* Simple icono para el menú */}
+          {isOpen ? '☰' : '☰'} {}
         </button>
         <div className={`iconos_href ${isOpen ? 'open' : ''}`}>
           <ul className="nav-icons">
@@ -57,8 +58,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/biblioteca" element={<Biblioteca/>} />
-        {/* Redireccionar a Home si el usuario visita la raíz */}
+        <Route path="/biblioteca" element={<Biblioteca />} />
+        { }
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
 
