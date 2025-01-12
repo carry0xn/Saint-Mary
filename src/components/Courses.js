@@ -3,54 +3,115 @@ import pre_adolescente from '../img/preadolescentes.jpg'
 import ninios from '../img/niños.jpg'
 import adolescentes from '../img/adolescentes.jpg'
 import adultos from '../img/adultos.webp'
+import trip from '../img/img3.jpeg'
 import { Link } from 'react-router-dom'
 
 function Courses() {
-    const handleScroll = (id) => {
-        // Navega a la ruta y luego desplaza a la sección específica
-        setTimeout(() => {
-            const element = document.getElementById(id);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }, 0) // Usa un timeout para asegurar que el cambio de ruta se complete antes de desplazarte
-    }
-    
-  return (
-    <section className="nueva_seccion">
-        <h2 className="title">Nuestros cursos</h2>
-        <div className="container">
-            <Link to="/Biblioteca"onClick={() => handleScroll('ninios')}>
-                <div className="box">
-                    <img src={ninios} alt="" />
-                    <h3>Niños</h3>
-                    <span>Niños de 3 a 11 años</span>
-                </div>
-            </Link>
+  const handleScroll = (id) => {
+    setTimeout(() => {
+      const element = document.getElementById(id)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }, 0)
+  }
 
-            <Link to="/Biblioteca" onClick={() => handleScroll('preadolescentes')}>
-                <div className="box">
-                    <img src={pre_adolescente} alt=""/> 
-                    <h3>Pre-Adolescentes</h3>
-                    <span>Pre-Adolescentes de 11 a 13 años</span>
-                </div>
-            </Link>
-            <Link to="/Biblioteca" onClick={() => handleScroll('adolescentes')}>
-                <div className="box">
-                    <img src={adolescentes} alt=""/> 
-                    <h3>Adolescentes</h3>
-                    <span>Adolescentes de 13 a 18 años</span>
-                </div>
-            </Link>
-            <Link to="/Biblioteca" onClick={() => handleScroll('adultos')}>
-                <div className="box">
-                    <img src={adultos} alt=""/> 
-                    <h3>Adultos</h3>
-                    <span>Adultos de 18 años en adelante</span>
-                </div>
-            </Link>
+  return (
+    <section className=" bg-light text-center" style={{padding: '30px', backgroundColor: '#FFFFFF'}}>
+    <div className="container">
+      <h2 className="mb-4 display-5" style={{ color: '#003478' }}>Nuestros cursos</h2>
+      <div className="row g-4">
+        <div className="col-lg-4 col-md-6">
+          <Link to="/Biblioteca" onClick={() => handleScroll('ninios')} className="text-decoration-none">
+            <div className="card h-100 shadow-sm">
+              <img src={ninios} alt="" className="card-img-top rounded" />
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: '#003478' }}>Niños</h5>
+                <p className="card-text">Niños de 3 a 11 años</p>
+              </div>
+            </div>
+          </Link>
         </div>
-    </section>
+        <div className="col-lg-4 col-md-6">
+          <Link to="/Biblioteca" onClick={() => handleScroll('preadolescentes')} className="text-decoration-none">
+            <div className="card h-100 shadow-sm">
+              <img src={pre_adolescente} alt="" className="card-img-top rounded" />
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: '#003478' }}>Pre-Adolescentes</h5>
+                <p className="card-text">Pre-Adolescentes de 11 a 13 años</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="col-lg-4 col-md-6">
+          <Link to="/Biblioteca" onClick={() => handleScroll('adolescentes')} className="text-decoration-none">
+            <div className="card h-100 shadow-sm">
+              <img src={adolescentes} alt="" className="card-img-top rounded" />
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: '#003478' }}>Adolescentes</h5>
+                <p className="card-text">Adolescentes de 13 a 18 años</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="col-lg-4 col-md-6">
+          <Link to="/Biblioteca" onClick={() => handleScroll('adultos')} className="text-decoration-none">
+            <div className="card h-100 shadow-sm">
+              <img src={adultos} alt="" className="card-img-top rounded" />
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: '#003478' }}>Adultos</h5>
+                <p className="card-text">Adultos de 18 años en adelante</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="col-lg-4 col-md-6">
+        <a href='https://www.cambridge.es/examenes-de-cambridge' className="text-decoration-none" target='_blank'>
+          
+            <div className="card h-100 shadow-sm">
+              <img src={trip} alt="" className="card-img-top rounded" />
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: '#003478' }}>Examenes</h5>
+                <p className="card-text">Examenes todos los Años en Cambridge</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="col-lg-4 col-md-6">
+          <Link to="/Trip" onClick={() => handleScroll('viaje-2026')} className="text-decoration-none" >
+            <div className="card h-100 shadow-sm">
+              <img src={trip} alt="" className="card-img-top rounded" />
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: '#003478' }}>Viajes de Estudios</h5>
+                <p className="card-text">Viaje a Inglaterra 2026</p>
+              </div>
+            </div>
+        </Link>
+        </div>
+
+        <div className="col-lg-4 col-md-6">
+            <div className="card h-100 shadow-sm">
+              <img src={trip} alt="" className="card-img-top rounded" />
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: '#003478' }}>Cursos Particulares</h5>
+                <p className="card-text">Cursos de Conversaciones</p>
+              </div>
+            </div>
+        </div>
+
+        <div className="col-lg-4 col-md-6">
+            <div className="card h-100 shadow-sm">
+              <img src={trip} alt="" className="card-img-top rounded" />
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: '#003478' }}>Cursos</h5>
+                <p className="card-text">Cursos Especiales para Adultos Mayores</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   )
 }
 

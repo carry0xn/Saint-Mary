@@ -1,19 +1,19 @@
-import React, { useMemo } from 'react';
-import prekinder from '../img/Pre_Kinder.png';
-import kinder from '../img/Kinder.png';
-import kids1 from '../img/Kids_1.png';
-import kids2 from '../img/Kids_2.png';
-import kids3 from '../img/Kids_3.png';
-import kids4 from '../img/Kids_4.png';
-import kids5 from '../img/Kids_5.png';
-import teens1 from '../img/Teens_1.png';
-import teens2 from '../img/Teens_2.png';
-import teens3 from '../img/Teens_3.png';
-import secondyear from '../img/Second_Year.png';
-import thirdyear from '../img/Third_Year.png';
-import fourthyear from '../img/Fourth_Year.png';
-import fifthyear from '../img/Fifth_Year.png';
-import superior from '../img/Superior.png';
+import React, { useMemo } from 'react'
+import prekinder from '../img/Pre_Kinder.png'
+import kinder from '../img/Kinder.png'
+import kids1 from '../img/Kids_1.png'
+import kids2 from '../img/Kids_2.png'
+import kids3 from '../img/Kids_3.png'
+import kids4 from '../img/Kids_4.png'
+import kids5 from '../img/Kids_5.png'
+import teens1 from '../img/Teens_1.png'
+import teens2 from '../img/Teens_2.png'
+import teens3 from '../img/Teens_3.png'
+import secondyear from '../img/Second_Year.png'
+import thirdyear from '../img/Third_Year.png'
+import fourthyear from '../img/Fourth_Year.png'
+import fifthyear from '../img/Fifth_Year.png'
+import superior from '../img/Superior.png'
 
 const Biblioteca = () => {
     const niveles = useMemo(() => [
@@ -32,69 +32,39 @@ const Biblioteca = () => {
         { id: 'fourthyear', title: 'Fourth Year', img: fourthyear },
         { id: 'fifthyear', title: 'Fifth Year', img: fifthyear },
         { id: 'superior', title: 'Superior', img: superior },
-    ], []);
+    ], [])
 
     return (
-        <section className='nueva_seccion'>
-            <section className="levels">
-                <h2 className="title">Nuestros Cursos</h2>
-                <h1 id="ninios">Niños</h1>
-                <div className="imagenes_levels">
-                    {niveles.slice(0, 4).map(({ id, title, img }) => (
-                        <div className="box-biblioteca" key={id}>
-                            <div className="imgBx">
-                                <img src={img} alt={`Nivel: ${title}`} />
-                            </div>
-                            <div className="content">
-                                <h2>{title}</h2>
-                            </div>
-                        </div>
-                    ))}
+        <section className="py-5">
+      <div className="container">
+        {[
+          { title: 'Niños', niveles: niveles.slice(0, 4) },
+          { title: 'Pre Adolescentes', niveles: niveles.slice(4, 7) },
+          { title: 'Adolescentes', niveles: niveles.slice(7, 14) },
+          { title: 'Adultos', niveles: niveles.slice(14) },
+        ].map(({ title, niveles }) => (
+          <div key={title} className="mb-5">
+            <h3 className="text-primary text-center mb-4">{title}</h3>
+            <div className="row g-4">
+              {niveles.map(({ id, title, img }) => (
+                <div key={id} className="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div className="card shadow-sm">
+                    <img
+                      src={img}
+                      className="card-img-top img-fluid rounded"
+                      alt={`Nivel: ${title}`}
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="card-title">{title}</h5>
+                    </div>
+                  </div>
                 </div>
-
-                <h1 id="preadolescentes">Pre Adolescentes</h1>
-                <div className="imagenes_levels">
-                    {niveles.slice(4, 7).map(({ id, title, img }) => (
-                        <div className="box-biblioteca" key={id}>
-                            <div className="imgBx">
-                                <img src={img} alt={`Nivel: ${title}`} />
-                            </div>
-                            <div className="content">
-                                <h2>{title}</h2>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                <h1 id="adolescentes">Adolescentes</h1>
-                <div className="imagenes_levels">
-                    {niveles.slice(7, 14).map(({ id, title, img }) => (
-                        <div className="box-biblioteca" key={id}>
-                            <div className="imgBx">
-                                <img src={img} alt={`Nivel: ${title}`} />
-                            </div>
-                            <div className="content">
-                                <h2>{title}</h2>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                <h1 id="adultos">Adultos</h1>
-                <div className="imagenes_levels">
-                    {niveles.slice(14).map(({ id, title, img }) => (
-                        <div className="box-biblioteca" key={id}>
-                            <div className="imgBx">
-                                <img src={img} alt={`Nivel: ${title}`} />
-                            </div>
-                            <div className="content">
-                                <h2>{title}</h2>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-        </section>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
     )
 }
 

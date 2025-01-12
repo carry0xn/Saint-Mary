@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Saint-Mary/static/css/main.20c42296.css",
-    "main.js": "/Saint-Mary/static/js/main.ab48d6e4.js",
+    "main.js": "/Saint-Mary/static/js/main.3b28a0a8.js",
     "static/media/Superior.png": "/Saint-Mary/static/media/Superior.a68ecbaae6075b081e06.png",
     "static/media/Second_Year.png": "/Saint-Mary/static/media/Second_Year.1a09b4c233bfa6406b59.png",
     "static/media/Fourth_Year.png": "/Saint-Mary/static/media/Fourth_Year.16d948ae914e50c7d4c8.png",
@@ -25,10 +25,10 @@
     "static/media/Kids_1.png": "/Saint-Mary/static/media/Kids_1.4f9541562925aaad9df3.png",
     "index.html": "/Saint-Mary/index.html",
     "main.20c42296.css.map": "/Saint-Mary/static/css/main.20c42296.css.map",
-    "main.ab48d6e4.js.map": "/Saint-Mary/static/js/main.ab48d6e4.js.map"
+    "main.3b28a0a8.js.map": "/Saint-Mary/static/js/main.3b28a0a8.js.map"
   },
   "entrypoints": [
     "static/css/main.20c42296.css",
-    "static/js/main.ab48d6e4.js"
+    "static/js/main.3b28a0a8.js"
   ]
 }
