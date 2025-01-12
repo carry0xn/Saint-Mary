@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Saint-Mary/static/css/main.20c42296.css",
-    "main.js": "/Saint-Mary/static/js/main.3b28a0a8.js",
+    "main.css": "/Saint-Mary/static/css/main.d221dc40.css",
+    "main.js": "/Saint-Mary/static/js/main.7599a461.js",
     "static/media/Superior.png": "/Saint-Mary/static/media/Superior.a68ecbaae6075b081e06.png",
     "static/media/Second_Year.png": "/Saint-Mary/static/media/Second_Year.1a09b4c233bfa6406b59.png",
     "static/media/Fourth_Year.png": "/Saint-Mary/static/media/Fourth_Year.16d948ae914e50c7d4c8.png",
@@ -24,11 +24,11 @@
     "static/media/Kids_4.png": "/Saint-Mary/static/media/Kids_4.b95e61e96e5445e9f835.png",
     "static/media/Kids_1.png": "/Saint-Mary/static/media/Kids_1.4f9541562925aaad9df3.png",
     "index.html": "/Saint-Mary/index.html",
-    "main.20c42296.css.map": "/Saint-Mary/static/css/main.20c42296.css.map",
-    "main.3b28a0a8.js.map": "/Saint-Mary/static/js/main.3b28a0a8.js.map"
+    "main.d221dc40.css.map": "/Saint-Mary/static/css/main.d221dc40.css.map",
+    "main.7599a461.js.map": "/Saint-Mary/static/js/main.7599a461.js.map"
   },
   "entrypoints": [
-    "static/css/main.20c42296.css",
-    "static/js/main.3b28a0a8.js"
+    "static/css/main.d221dc40.css",
+    "static/js/main.7599a461.js"
   ]
 }
