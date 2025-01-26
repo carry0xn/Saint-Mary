@@ -3,8 +3,8 @@ import React from 'react'
 function Trip() {
   return (
     <section id="viaje-2026" className="container py-5 my-5 text-center" style={{ backgroundColor: '#FFFFFF' }}>
-      <h2 class="display-4 text-primary">ENGLAND FEBRUARY 2026</h2>
-      <p class="lead"><strong>SAINT MARY SCHOOL OF ENGLISH</strong></p>
+      <h2 class="display-4 text-primary">VIAJE A INGLATERRA FEBRERO 2026</h2>
+      <p class="lead"><strong>SAINT MARY: ESCUELA DE INGLÉS</strong></p>
       <p><strong>Detalles Importantes:</strong></p>
       <ul class="list-unstyled text-start mx-auto" style={{ maxWidth: '700px' }}>
           <li><strong>Duración:</strong> 4 semanas de alojamiento en familia (media pensión)</li>
