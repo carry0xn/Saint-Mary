@@ -1,0 +1,156 @@
+@import url(./css/home.css); 
+@import url(./css/viaje.css); 
+@import url(./css/biblioteca.css); 
+@import url(./css/cursos.css); 
+@import url(./css/contacto.css); 
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #00247d;
+  font-family: 'Arial', sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.title {
+  font-size: 2.5rem; 
+  text-align: center; 
+  margin: 30px 0; 
+  font-weight: bold;
+  color: #00247d; 
+  text-align: center;
+  margin: 20px 0;
+}
+
+.navbar {
+  background-color: #f8f9fa; 
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; /* Asegura que todos los elementos estén a la misma altura */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Asegura que el logo esté alineado verticalmente */
+}
+
+.logo-container img {
+  height: 150px; 
+}
+
+.iconos_href{
+  display: flex;
+}
+
+.nav-items, .nav-icons {
+  display: flex;
+  align-items: center; /* Alinea los ítems e iconos verticalmente */
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-items a, .nav-icons a {
+  color: #00247d; 
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.nav-icons a {
+  width: auto;
+  font-size: 30px;
+  color: #ffffff; 
+  background-color: #00247d; 
+  padding: 15px;
+  border-radius: 50%;
+  margin-left: 15px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-icons a:hover {
+  background-color: #001855; 
+  color: #fff;
+}
+
+.nav-items a:hover, .nav-icons a:hover {
+  color: #C8102E;
+}
+.menu-toggle {
+  display: none; /* Oculta el botón por defecto */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; /* Ajusta según lo que quieras */
+}
+
+@media (max-width: 768px) {
+  .iconos_href {
+      display: none; /* Oculta el menú por defecto */
+      flex-direction: column;
+      width: 100%; /* Ocupa todo el ancho */
+  }
+
+  .iconos_href.open {
+      display: flex; /* Muestra el menú cuando está abierto */
+  }
+
+  .menu-toggle {
+      display: block; /* Muestra el botón en pantallas pequeñas */
+  }
+}
+.mapa {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Mantiene una proporción 16:9 (altura relativa al ancho) */
+  overflow: hidden;
+  border-radius: 10px; /* Bordes redondeados, opcional */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.mapa iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; /* Remueve el borde del iframe */
+}
+/*FOOTER*/
+
+.footer{
+  padding: 10px 0;
+}
+
+.footer-items {
+  width: auto;
+  gap: 15px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.footer-items a{
+  font-size: 30px; 
+  color: #ffffff; 
+  background-color: #C8102E;
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 15px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-items a:hover{
+  color:#00247d;
+  background-color: #a70d26;
+}

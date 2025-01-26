@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Saint-Mary/static/css/main.a7eba22f.css",
+    "main.js": "/Saint-Mary/static/js/main.7254b096.js",
+    "static/js/453.80d9e4c8.chunk.js": "/Saint-Mary/static/js/453.80d9e4c8.chunk.js",
+    "static/media/pre_adolescentes.jpg": "/Saint-Mary/static/media/pre_adolescentes.2e6227055339f9218539.jpg",
+    "static/media/SAINT_MARY-removebg-preview.png": "/Saint-Mary/static/media/SAINT_MARY-removebg-preview.c4c35f2d0ba915ae6de7.png",
+    "static/media/img3.jpg": "/Saint-Mary/static/media/img3.bac43100669a1ebd0d63.jpg",
+    "static/media/niños.jpg": "/Saint-Mary/static/media/niños.0819326dffddbce8ee8d.jpg",
+    "static/media/adultos.jpg": "/Saint-Mary/static/media/adultos.2cb4d2a83829034d188e.jpg",
+    "static/media/adolescentes.jpg": "/Saint-Mary/static/media/adolescentes.0bf51f84d65ee7eba94c.jpg",
+    "index.html": "/Saint-Mary/index.html",
+    "main.a7eba22f.css.map": "/Saint-Mary/static/css/main.a7eba22f.css.map",
+    "main.7254b096.js.map": "/Saint-Mary/static/js/main.7254b096.js.map",
+    "453.80d9e4c8.chunk.js.map": "/Saint-Mary/static/js/453.80d9e4c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7eba22f.css",
+    "static/js/main.7254b096.js"
+  ]
+}
