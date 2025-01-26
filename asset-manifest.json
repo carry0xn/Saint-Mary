@@ -1,14 +1,18 @@
 {
   "files": {
     "main.css": "/Saint-Mary/static/css/main.d221dc40.css",
-    "main.js": "/Saint-Mary/static/js/main.7599a461.js",
+    "main.js": "/Saint-Mary/static/js/main.d73a66f4.js",
     "static/media/Superior.png": "/Saint-Mary/static/media/Superior.a68ecbaae6075b081e06.png",
     "static/media/Second_Year.png": "/Saint-Mary/static/media/Second_Year.1a09b4c233bfa6406b59.png",
     "static/media/Fourth_Year.png": "/Saint-Mary/static/media/Fourth_Year.16d948ae914e50c7d4c8.png",
     "static/media/Fifth_Year.png": "/Saint-Mary/static/media/Fifth_Year.57ef0743780d97a6b6ac.png",
     "static/media/Third_Year.png": "/Saint-Mary/static/media/Third_Year.185f43604f42aa271fe4.png",
+    "static/media/curso-virtual.png": "/Saint-Mary/static/media/curso-virtual.95619c2ca2508377c11c.png",
+    "static/media/trip.jpg": "/Saint-Mary/static/media/trip.711704a1220bfaff1ff9.jpg",
     "static/media/SAINT_MARY.png": "/Saint-Mary/static/media/SAINT_MARY.c4c35f2d0ba915ae6de7.png",
     "static/media/img3.jpeg": "/Saint-Mary/static/media/img3.7924320b0c1ae0383b80.jpeg",
+    "static/media/logo.jpg": "/Saint-Mary/static/media/logo.c0c9bc9f789227fa0918.jpg",
+    "static/media/speaking.webp": "/Saint-Mary/static/media/speaking.aec955008f365af69c09.webp",
     "static/media/adultos.webp": "/Saint-Mary/static/media/adultos.564421299451205c217b.webp",
     "static/media/Teens_3.png": "/Saint-Mary/static/media/Teens_3.87555d6cbf53bbe1b3dd.png",
     "static/media/Teens_2.png": "/Saint-Mary/static/media/Teens_2.35a40947dbb767d7ec32.png",
@@ -25,10 +29,10 @@
     "static/media/Kids_1.png": "/Saint-Mary/static/media/Kids_1.4f9541562925aaad9df3.png",
     "index.html": "/Saint-Mary/index.html",
     "main.d221dc40.css.map": "/Saint-Mary/static/css/main.d221dc40.css.map",
-    "main.7599a461.js.map": "/Saint-Mary/static/js/main.7599a461.js.map"
+    "main.d73a66f4.js.map": "/Saint-Mary/static/js/main.d73a66f4.js.map"
   },
   "entrypoints": [
     "static/css/main.d221dc40.css",
-    "static/js/main.7599a461.js"
+    "static/js/main.d73a66f4.js"
   ]
 }
