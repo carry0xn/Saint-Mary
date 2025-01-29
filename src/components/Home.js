@@ -1,7 +1,7 @@
 import React from 'react'
 import Courses from './Courses'
 import Contact from './Contact'
-import imagen from '../img/logo.jpg'
+import imagen from '../img/logo.jpeg'
 
 function Home() {
   return (

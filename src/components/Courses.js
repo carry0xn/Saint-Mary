@@ -1,10 +1,10 @@
 import React from 'react'
 import pre_adolescente from '../img/preadolescentes.jpg'
-import ninios from '../img/niños.jpg'
+import ninios from '../img/niños.jpeg'
 import adolescentes from '../img/adolescentes.jpg'
 import adultos from '../img/adultos.webp'
-import england from '../img/img3.jpeg'
-import trip from '../img/trip.jpg'
+import cambridge from '../img/cambridge.jpg'
+import trip from '../img/trip.jpeg'
 import virtual from '../img/curso-virtual.png'
 import speaking from '../img/speaking.webp'
 import { Link } from 'react-router-dom'
@@ -72,7 +72,7 @@ function Courses() {
         <a href='https://www.cambridge.es/examenes-de-cambridge' className="text-decoration-none" target='_blank'>
           
             <div className="card h-100 shadow-sm">
-              <img src={england} alt="" className="card-img-top rounded" />
+              <img src={cambridge} alt="" className="card-img-top rounded" />
               <div className="card-body">
                 <h5 className="card-title" style={{ color: '#003478' }}>Examenes</h5>
                 <p className="card-text">Examenes todos los Años en Cambridge</p>
