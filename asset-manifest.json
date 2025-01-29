@@ -1,26 +1,37 @@
 {
   "files": {
     "main.css": "/Saint-Mary/static/css/main.d221dc40.css",
-    "main.js": "/Saint-Mary/static/js/main.d73a66f4.js",
+    "main.js": "/Saint-Mary/static/js/main.c1fe0d8a.js",
+    "static/media/collague.jpg": "/Saint-Mary/static/media/collague.327bc9367934d77e3e04.jpg",
+    "static/media/zebra_cross.jpeg": "/Saint-Mary/static/media/zebra_cross.04fd12216a561d169eb1.jpeg",
+    "static/media/telefone.jpeg": "/Saint-Mary/static/media/telefone.c78f79d557ea092af83c.jpeg",
     "static/media/Superior.png": "/Saint-Mary/static/media/Superior.a68ecbaae6075b081e06.png",
     "static/media/Second_Year.png": "/Saint-Mary/static/media/Second_Year.1a09b4c233bfa6406b59.png",
     "static/media/Fourth_Year.png": "/Saint-Mary/static/media/Fourth_Year.16d948ae914e50c7d4c8.png",
     "static/media/Fifth_Year.png": "/Saint-Mary/static/media/Fifth_Year.57ef0743780d97a6b6ac.png",
     "static/media/Third_Year.png": "/Saint-Mary/static/media/Third_Year.185f43604f42aa271fe4.png",
+    "static/media/painting.jpeg": "/Saint-Mary/static/media/painting.9c697df5fd275e20e7db.jpeg",
+    "static/media/tower.jpeg": "/Saint-Mary/static/media/tower.a58e0cb9e93970c81350.jpeg",
+    "static/media/colisseum.jpeg": "/Saint-Mary/static/media/colisseum.c6d7bacb8cbe66c1865b.jpeg",
     "static/media/curso-virtual.png": "/Saint-Mary/static/media/curso-virtual.95619c2ca2508377c11c.png",
-    "static/media/trip.jpg": "/Saint-Mary/static/media/trip.711704a1220bfaff1ff9.jpg",
+    "static/media/logo.jpeg": "/Saint-Mary/static/media/logo.f5e0db3ced4c5c08506d.jpeg",
+    "static/media/flag.jpeg": "/Saint-Mary/static/media/flag.629e023ca619efd69bcc.jpeg",
+    "static/media/niños.jpeg": "/Saint-Mary/static/media/niños.6e74ea089fe1c58d246e.jpeg",
+    "static/media/flower.jpeg": "/Saint-Mary/static/media/flower.3c5756ae17d2be323f91.jpeg",
     "static/media/SAINT_MARY.png": "/Saint-Mary/static/media/SAINT_MARY.c4c35f2d0ba915ae6de7.png",
-    "static/media/img3.jpeg": "/Saint-Mary/static/media/img3.7924320b0c1ae0383b80.jpeg",
-    "static/media/logo.jpg": "/Saint-Mary/static/media/logo.c0c9bc9f789227fa0918.jpg",
+    "static/media/trip.jpeg": "/Saint-Mary/static/media/trip.97a6447af59e479d739a.jpeg",
+    "static/media/trip_logo.jpeg": "/Saint-Mary/static/media/trip_logo.d791c6c69e979408190a.jpeg",
+    "static/media/castle (2).jpeg": "/Saint-Mary/static/media/castle (2).52621585c416eab2162e.jpeg",
+    "static/media/sir.jpeg": "/Saint-Mary/static/media/sir.c41627579b790a259aa9.jpeg",
     "static/media/speaking.webp": "/Saint-Mary/static/media/speaking.aec955008f365af69c09.webp",
     "static/media/adultos.webp": "/Saint-Mary/static/media/adultos.564421299451205c217b.webp",
     "static/media/Teens_3.png": "/Saint-Mary/static/media/Teens_3.87555d6cbf53bbe1b3dd.png",
     "static/media/Teens_2.png": "/Saint-Mary/static/media/Teens_2.35a40947dbb767d7ec32.png",
     "static/media/Teens_1.png": "/Saint-Mary/static/media/Teens_1.caaa658fa1217a943104.png",
     "static/media/adolescentes.jpg": "/Saint-Mary/static/media/adolescentes.556692822bf82cb2564b.jpg",
+    "static/media/cambridge.jpg": "/Saint-Mary/static/media/cambridge.7d19e8e50bb626cf68ef.jpg",
     "static/media/Kinder.png": "/Saint-Mary/static/media/Kinder.94c1e34684cc92fb1e6a.png",
     "static/media/Pre_Kinder.png": "/Saint-Mary/static/media/Pre_Kinder.fb3095962f8cbb4244f2.png",
-    "static/media/niños.jpg": "/Saint-Mary/static/media/niños.5ba7899ed5a9136e7be0.jpg",
     "static/media/preadolescentes.jpg": "/Saint-Mary/static/media/preadolescentes.e980bd4f0f87003fd7b0.jpg",
     "static/media/Kids_3.png": "/Saint-Mary/static/media/Kids_3.2da77636a546d16a032f.png",
     "static/media/Kids_5.png": "/Saint-Mary/static/media/Kids_5.b546482074adcf50e71d.png",
@@ -29,10 +40,10 @@
     "static/media/Kids_1.png": "/Saint-Mary/static/media/Kids_1.4f9541562925aaad9df3.png",
     "index.html": "/Saint-Mary/index.html",
     "main.d221dc40.css.map": "/Saint-Mary/static/css/main.d221dc40.css.map",
-    "main.d73a66f4.js.map": "/Saint-Mary/static/js/main.d73a66f4.js.map"
+    "main.c1fe0d8a.js.map": "/Saint-Mary/static/js/main.c1fe0d8a.js.map"
   },
   "entrypoints": [
     "static/css/main.d221dc40.css",
-    "static/js/main.d73a66f4.js"
+    "static/js/main.c1fe0d8a.js"
   ]
 }
