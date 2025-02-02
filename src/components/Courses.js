@@ -1,4 +1,5 @@
 import React from 'react'
+import kinder from '../img/kinder.jpeg'
 import pre_adolescente from '../img/preadolescentes.jpg'
 import ninios from '../img/niños.jpeg'
 import adolescentes from '../img/adolescentes.jpg'
@@ -25,18 +26,30 @@ function Courses() {
       <h2 className="mb-4 display-5" style={{ color: '#003478' }}>Nuestros cursos</h2>
       <div className="row g-4">
         <div className="col-lg-4 col-md-6">
-          <Link to="/Biblioteca" onClick={() => handleScroll('ninios')} className="text-decoration-none">
+          <Link to="/Biblioteca" className="text-decoration-none" onClick={() => setTimeout(() => handleScroll('prekinder'), 300)}>
+            <div className="card h-100 shadow-sm">
+              <img src={kinder} alt="" className="card-img-top rounded" />
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: '#003478' }}>Niños</h5>
+                <p className="card-text">Niños de 3 a 5 años</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="col-lg-4 col-md-6">
+          <Link to="/Biblioteca" className="text-decoration-none" onClick={() => setTimeout(() => handleScroll('kids2'), 300)}>
             <div className="card h-100 shadow-sm">
               <img src={ninios} alt="" className="card-img-top rounded" />
               <div className="card-body">
                 <h5 className="card-title" style={{ color: '#003478' }}>Niños</h5>
-                <p className="card-text">Niños de 3 a 11 años</p>
+                <p className="card-text">Niños de 5 a 11 años</p>
               </div>
             </div>
           </Link>
         </div>
         <div className="col-lg-4 col-md-6">
-          <Link to="/Biblioteca" onClick={() => handleScroll('preadolescentes')} className="text-decoration-none">
+          <Link to="/Biblioteca" className="text-decoration-none" onClick={() => setTimeout(() => handleScroll('kids3'), 300)}>
             <div className="card h-100 shadow-sm">
               <img src={pre_adolescente} alt="" className="card-img-top rounded" />
               <div className="card-body">
@@ -47,7 +60,7 @@ function Courses() {
           </Link>
         </div>
         <div className="col-lg-4 col-md-6">
-          <Link to="/Biblioteca" onClick={() => handleScroll('adolescentes')} className="text-decoration-none">
+          <Link to="/Biblioteca" className="text-decoration-none" onClick={() => setTimeout(() => handleScroll('teens1'), 300)}>
             <div className="card h-100 shadow-sm">
               <img src={adolescentes} alt="" className="card-img-top rounded" />
               <div className="card-body">
@@ -58,7 +71,7 @@ function Courses() {
           </Link>
         </div>
         <div className="col-lg-4 col-md-6">
-          <Link to="/Biblioteca" onClick={() => handleScroll('adultos')} className="text-decoration-none">
+          <Link to="/Biblioteca" className="text-decoration-none" onClick={() => setTimeout(() => handleScroll('superior'), 300)}>
             <div className="card h-100 shadow-sm">
               <img src={adultos} alt="" className="card-img-top rounded" />
               <div className="card-body">
