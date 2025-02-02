@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Saint-Mary/static/css/main.d221dc40.css",
-    "main.js": "/Saint-Mary/static/js/main.c1fe0d8a.js",
+    "main.js": "/Saint-Mary/static/js/main.f22ba318.js",
     "static/media/collague.jpg": "/Saint-Mary/static/media/collague.327bc9367934d77e3e04.jpg",
     "static/media/zebra_cross.jpeg": "/Saint-Mary/static/media/zebra_cross.04fd12216a561d169eb1.jpeg",
     "static/media/telefone.jpeg": "/Saint-Mary/static/media/telefone.c78f79d557ea092af83c.jpeg",
@@ -12,6 +12,7 @@
     "static/media/Third_Year.png": "/Saint-Mary/static/media/Third_Year.185f43604f42aa271fe4.png",
     "static/media/painting.jpeg": "/Saint-Mary/static/media/painting.9c697df5fd275e20e7db.jpeg",
     "static/media/tower.jpeg": "/Saint-Mary/static/media/tower.a58e0cb9e93970c81350.jpeg",
+    "static/media/kinder.jpeg": "/Saint-Mary/static/media/kinder.d50541ac8e426cee8053.jpeg",
     "static/media/colisseum.jpeg": "/Saint-Mary/static/media/colisseum.c6d7bacb8cbe66c1865b.jpeg",
     "static/media/curso-virtual.png": "/Saint-Mary/static/media/curso-virtual.95619c2ca2508377c11c.png",
     "static/media/logo.jpeg": "/Saint-Mary/static/media/logo.f5e0db3ced4c5c08506d.jpeg",
@@ -40,10 +41,10 @@
     "static/media/Kids_1.png": "/Saint-Mary/static/media/Kids_1.4f9541562925aaad9df3.png",
     "index.html": "/Saint-Mary/index.html",
     "main.d221dc40.css.map": "/Saint-Mary/static/css/main.d221dc40.css.map",
-    "main.c1fe0d8a.js.map": "/Saint-Mary/static/js/main.c1fe0d8a.js.map"
+    "main.f22ba318.js.map": "/Saint-Mary/static/js/main.f22ba318.js.map"
   },
   "entrypoints": [
     "static/css/main.d221dc40.css",
-    "static/js/main.c1fe0d8a.js"
+    "static/js/main.f22ba318.js"
   ]
 }
