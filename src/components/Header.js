@@ -45,6 +45,9 @@ function Header() {
                         <li className="nav-item">
                             <Link className="nav-link" style={{ color: '#00247D', fontSize: '25px' }} to="/courses">Cursos</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" style={{ color: '#00247D', fontSize: '25px' }} to="/trip">Inglaterra 2026</Link>
+                        </li>
                         </ul>
                         <ul className="navbar-nav d-flex flex-row">
                         <li className="nav-item">

@@ -12,6 +12,8 @@ import sir from '../img/sir.jpeg'
 import castle2 from '../img/castle (2).jpeg'
 import painting from '../img/painting.jpeg'
 import flower from '../img/flower.jpeg'
+import garden from '../img/garden.jpeg'
+
 
 function CarouselComponent  () {
     return (
@@ -50,6 +52,9 @@ function CarouselComponent  () {
           </div>
           <div className="carousel-item">
             <img src={flower} className="d-block w-100" alt="Third slide" style={{ width: "100px", height: "700px", objectFit: "cover" }}/>
+          </div>
+          <div className="carousel-item">
+            <img src={garden} className="d-block w-100" alt="Third slide" style={{ width: "100px", height: "700px", objectFit: "cover" }}/>
           </div>
         </div>
   
