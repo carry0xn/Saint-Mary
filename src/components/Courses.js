@@ -1,9 +1,9 @@
 import React from 'react'
 import kinder from '../img/kinder.jpeg'
-import pre_adolescente from '../img/preadolescentes.jpg'
+import pre_adolescente from '../img/preadolescentes.jpeg'
 import ninios from '../img/niños.jpeg'
-import adolescentes from '../img/adolescentes.jpg'
-import adultos from '../img/adultos.webp'
+import adolescentes from '../img/adolescentes.jpeg'
+import adultos from '../img/adultos.jpeg'
 import cambridge from '../img/cambridge.jpg'
 import trip from '../img/Aplicando nombre.jpg'
 import virtual from '../img/curso-virtual.png'
@@ -20,115 +20,190 @@ function Courses() {
     }, 0)
   }
 
+  const courseCategories = [
+    {
+      title: "Cursos por Edad",
+      subtitle: "Programas diseñados específicamente para cada grupo etario",
+      courses: [
+        {
+          id: 1,
+          title: "Niños (3-5 años)",
+          description: "Primeros pasos en inglés con juegos y actividades lúdicas",
+          image: kinder,
+          link: "/Biblioteca",
+          scrollTo: "prekinder",
+          badge: "Principiante",
+          color: "#28a745"
+        },
+        {
+          id: 2,
+          title: "Niños (5-11 años)",
+          description: "Desarrollo de habilidades básicas con metodología divertida",
+          image: ninios,
+          link: "/Biblioteca",
+          scrollTo: "kids2",
+          badge: "Básico",
+          color: "#17a2b8"
+        },
+        {
+          id: 3,
+          title: "Pre-Adolescentes (11-13 años)",
+          description: "Preparación para niveles intermedios con enfoque comunicativo",
+          image: pre_adolescente,
+          link: "/Biblioteca",
+          scrollTo: "kids3",
+          badge: "Intermedio",
+          color: "#ffc107"
+        },
+        {
+          id: 4,
+          title: "Adolescentes (13-18 años)",
+          description: "Inglés avanzado con preparación para exámenes internacionales",
+          image: adolescentes,
+          link: "/Biblioteca",
+          scrollTo: "teens1",
+          badge: "Pre-Intermedio",
+          color: "#fd7e14"
+        },
+        {
+          id: 5,
+          title: "Adultos (18+ años)",
+          description: "Cursos flexibles para profesionales y estudiantes universitarios",
+          image: adultos,
+          link: "/Biblioteca",
+          scrollTo: "superior",
+          badge: "Todos los Niveles",
+          color: "#6f42c1"
+        }
+      ]
+    },
+    {
+      title: "Programas Especiales",
+      subtitle: "Experiencias únicas y certificaciones internacionales",
+      courses: [
+        {
+          id: 6,
+          title: "Exámenes Cambridge",
+          description: "Certificaciones oficiales reconocidas mundialmente",
+          image: cambridge,
+          link: "https://www.cambridge.es/examenes-de-cambridge",
+          external: true,
+          badge: "Certificación",
+          color: "#dc3545"
+        },
+        {
+          id: 7,
+          title: "Viaje a Inglaterra 2026",
+          description: "Inmersión total de 4 semanas con familias británicas",
+          image: trip,
+          link: "/Trip",
+          scrollTo: "viaje-2026",
+          badge: "Inmersión",
+          color: "#198754"
+        }
+      ]
+    },
+    {
+      title: "Cursos Personalizados",
+      subtitle: "Atención especializada según tus necesidades",
+      courses: [
+        {
+          id: 8,
+          title: "Cursos Particulares",
+          description: "Clases individuales de conversación y práctica intensiva",
+          image: virtual,
+          badge: "Individual",
+          color: "#0d6efd"
+        },
+        {
+          id: 9,
+          title: "Adultos Mayores",
+          description: "Programas especiales adaptados para la tercera edad",
+          image: speaking,
+          badge: "Especializado",
+          color: "#6610f2"
+        }
+      ]
+    }
+  ]
+
   return (
-    <section className=" bg-light text-center" style={{padding: '30px', backgroundColor: '#FFFFFF'}}>
-    <div className="container">
-      <h2 className="mb-4 display-5" style={{ color: '#003478' }}>Nuestros cursos</h2>
-      <div className="row g-4">
-        <div className="col-lg-4 col-md-6">
-          <Link to="/Biblioteca" className="text-decoration-none" onClick={() => setTimeout(() => handleScroll('prekinder'), 300)}>
-            <div className="card h-100 shadow-sm">
-              <img src={kinder} alt="" className="card-img-top rounded" />
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: '#003478' }}>Niños</h5>
-                <p className="card-text">Niños de 3 a 5 años</p>
-              </div>
-            </div>
-          </Link>
+    <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
+      <div className="container">
+        {/* Hero Header */}
+        <div className="text-center mb-5">
+          <h1 className="display-4 fw-bold mb-3" style={{ color: '#003478' }}>
+            Nuestros Cursos de Inglés
+          </h1>
         </div>
 
-        <div className="col-lg-4 col-md-6">
-          <Link to="/Biblioteca" className="text-decoration-none" onClick={() => setTimeout(() => handleScroll('kids2'), 300)}>
-            <div className="card h-100 shadow-sm">
-              <img src={ninios} alt="" className="card-img-top rounded" />
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: '#003478' }}>Niños</h5>
-                <p className="card-text">Niños de 5 a 11 años</p>
-              </div>
+        {/* Course Categories */}
+        {courseCategories.map((category, categoryIndex) => (
+          <div key={categoryIndex} className="mb-5">
+            <div className="text-center mb-4">
+              <h2 className="h3 text-primary mb-2">{category.title}</h2>
+              <p className="text-muted">{category.subtitle}</p>
             </div>
-          </Link>
-        </div>
-        <div className="col-lg-4 col-md-6">
-          <Link to="/Biblioteca" className="text-decoration-none" onClick={() => setTimeout(() => handleScroll('kids3'), 300)}>
-            <div className="card h-100 shadow-sm">
-              <img src={pre_adolescente} alt="" className="card-img-top rounded" />
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: '#003478' }}>Pre-Adolescentes</h5>
-                <p className="card-text">Pre-Adolescentes de 11 a 13 años</p>
-              </div>
+            
+            <div className="row g-4">
+              {category.courses.map((course) => (
+                <div key={course.id} className="col-lg-4 col-md-6">
+                  {course.link ? (
+                    course.external ? (
+                      <a href={course.link} className="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                        <CourseCard course={course} />
+                      </a>
+                    ) : (
+                      <Link 
+                        to={course.link} 
+                        className="text-decoration-none" 
+                        onClick={() => course.scrollTo && setTimeout(() => handleScroll(course.scrollTo), 300)}
+                      >
+                        <CourseCard course={course} />
+                      </Link>
+                    )
+                  ) : (
+                    <div className="text-decoration-none" style={{ cursor: 'pointer' }}>
+                      <CourseCard course={course} />
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
-          </Link>
-        </div>
-        <div className="col-lg-4 col-md-6">
-          <Link to="/Biblioteca" className="text-decoration-none" onClick={() => setTimeout(() => handleScroll('teens1'), 300)}>
-            <div className="card h-100 shadow-sm">
-              <img src={adolescentes} alt="" className="card-img-top rounded" />
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: '#003478' }}>Adolescentes</h5>
-                <p className="card-text">Adolescentes de 13 a 18 años</p>
-              </div>
-            </div>
-          </Link>
-        </div>
-        <div className="col-lg-4 col-md-6">
-          <Link to="/Biblioteca" className="text-decoration-none" onClick={() => setTimeout(() => handleScroll('superior'), 300)}>
-            <div className="card h-100 shadow-sm">
-              <img src={adultos} alt="" className="card-img-top rounded" />
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: '#003478' }}>Adultos</h5>
-                <p className="card-text">Adultos de 18 años en adelante</p>
-              </div>
-            </div>
-          </Link>
-        </div>
-        <div className="col-lg-4 col-md-6">
-        <a href='https://www.cambridge.es/examenes-de-cambridge' className="text-decoration-none" target='_blank'>
-          
-            <div className="card h-100 shadow-sm">
-              <img src={cambridge} alt="" className="card-img-top rounded" />
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: '#003478' }}>Examenes</h5>
-                <p className="card-text">Examenes todos los Años en Cambridge</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div className="col-lg-4 col-md-6">
-          <Link to="/Trip" onClick={() => handleScroll('viaje-2026')} className="text-decoration-none" >
-            <div className="card h-100 shadow-sm">
-              <img src={trip} alt="" className="card-img-top rounded" />
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: '#003478' }}>Viajes de Estudios</h5>
-                <p className="card-text">Viaje a Inglaterra 2026</p>
-              </div>
-            </div>
-        </Link>
-        </div>
+          </div>
+        ))}
+        
+      </div>
+    </section>
+  )
+}
 
-        <div className="col-lg-4 col-md-6">
-            <div className="card h-100 shadow-sm">
-              <img src={virtual} alt="" className="card-img-top rounded" />
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: '#003478' }}>Cursos Particulares</h5>
-                <p className="card-text">Cursos de Conversaciones</p>
-              </div>
-            </div>
-        </div>
-
-        <div className="col-lg-4 col-md-6">
-            <div className="card h-100 shadow-sm">
-              <img src={speaking} alt="" className="card-img-top rounded" />
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: '#003478' }}>Cursos</h5>
-                <p className="card-text">Cursos Especiales para Adultos Mayores</p>
-              </div>
-            </div>
+// Componente para las cards de cursos
+const CourseCard = ({ course }) => (
+  <div className="card h-100 shadow-sm border-0 course-card">
+    <div className="position-relative">
+      <img src={course.image} alt={course.title} className="card-img-top" style={{ height: '300px', objectFit: 'cover' }} />
+      {course.badge && (
+        <span 
+          className="badge position-absolute top-0 end-0 m-2 px-3 py-2"
+          style={{ backgroundColor: course.color, fontSize: '0.8rem' }}
+        >
+          {course.badge}
+        </span>
+      )}
+    </div>
+    <div className="card-body d-flex flex-column">
+      <h5 className="card-title" style={{ color: '#003478' }}>{course.title}</h5>
+      <p className="card-text text-muted flex-grow-1">{course.description}</p>
+      <div className="mt-auto">
+        <div className="d-flex align-items-center justify-content-between">
+          <div className="text-primary">
+            <i className="fas fa-arrow-right"></i>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  
-  )
-}
+  </div>
+)
 
 export default Courses

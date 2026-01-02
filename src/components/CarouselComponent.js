@@ -1,5 +1,5 @@
-import "bootstrap/dist/css/bootstrap.min.css"; // Importa Bootstrap si aún no lo hiciste
-import "bootstrap/dist/js/bootstrap.bundle.min";
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min"
 import React from 'react'
 import collague from '../img/collague.jpg'
 import colisseum from '../img/colisseum.jpeg'
