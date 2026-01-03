@@ -41,8 +41,8 @@ function LevelTest() {
       level: "A2"
     },
     {
-      question: "There _____ many people at the party.",
-      options: ["was", "were", "is", "are"],
+      question: "She said she _____ tired.",
+      options: ["is", "was", "were", "are"],
       correct: 1,
       level: "A2"
     },
@@ -78,9 +78,9 @@ function LevelTest() {
       level: "B1"
     },
     {
-      question: "She's interested _____ learning new languages.",
-      options: ["in", "on", "at", "for"],
-      correct: 0,
+      question: "He said he _____ call me the next day.",
+      options: ["will", "would", "can", "could"],
+      correct: 1,
       level: "B1"
     },
     // B2 - Upper Intermediate
@@ -97,8 +97,8 @@ function LevelTest() {
       level: "B2"
     },
     {
-      question: "I'd rather you _____ smoke in here.",
-      options: ["don't", "didn't", "not", "won't"],
+      question: "She asked me _____ I had finished my homework.",
+      options: ["that", "if", "what", "when"],
       correct: 1,
       level: "B2"
     },
@@ -116,9 +116,9 @@ function LevelTest() {
       level: "C1"
     },
     {
-      question: "The proposal is _____ consideration by the board.",
-      options: ["under", "in", "on", "at"],
-      correct: 0,
+      question: "The teacher advised us _____ harder for the exam.",
+      options: ["study", "studying", "to study", "that we study"],
+      correct: 2,
       level: "C1"
     },
     // C2 - Proficiency
@@ -178,7 +178,7 @@ function LevelTest() {
     const percentage = Math.round((score / questions.length) * 100)
     
     return (
-      <section className="py-5" style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
+      <section className="py-5" style={{ backgroundColor: '#b6b6b6ff', minHeight: '100vh' }}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
@@ -270,12 +270,14 @@ function LevelTest() {
                           style={{ border: '2px solid #dee2e6', borderRadius: '10px' }}
                           onClick={() => handleAnswer(index)}
                           onMouseEnter={(e) => {
-                            e.target.style.backgroundColor = '#f8f9fa'
+                            e.target.style.backgroundColor = '#0d6efd'
                             e.target.style.borderColor = '#0d6efd'
+                            e.target.style.color = 'white'
                           }}
                           onMouseLeave={(e) => {
                             e.target.style.backgroundColor = 'white'
                             e.target.style.borderColor = '#dee2e6'
+                            e.target.style.color = 'black'
                           }}
                         >
                           <span className="me-3 fw-bold text-primary">
