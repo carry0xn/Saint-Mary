@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Saint-Mary/static/css/main.d221dc40.css",
-    "main.js": "/Saint-Mary/static/js/main.3a969ea0.js",
+    "main.js": "/Saint-Mary/static/js/main.598bed45.js",
     "static/media/collague.jpg": "/Saint-Mary/static/media/collague.327bc9367934d77e3e04.jpg",
     "static/media/zebra_cross.jpeg": "/Saint-Mary/static/media/zebra_cross.04fd12216a561d169eb1.jpeg",
     "static/media/telefone.jpeg": "/Saint-Mary/static/media/telefone.c78f79d557ea092af83c.jpeg",
@@ -48,10 +48,10 @@
     "static/media/Kids_1.png": "/Saint-Mary/static/media/Kids_1.4f9541562925aaad9df3.png",
     "index.html": "/Saint-Mary/index.html",
     "main.d221dc40.css.map": "/Saint-Mary/static/css/main.d221dc40.css.map",
-    "main.3a969ea0.js.map": "/Saint-Mary/static/js/main.3a969ea0.js.map"
+    "main.598bed45.js.map": "/Saint-Mary/static/js/main.598bed45.js.map"
   },
   "entrypoints": [
     "static/css/main.d221dc40.css",
-    "static/js/main.3a969ea0.js"
+    "static/js/main.598bed45.js"
   ]
 }
