@@ -7,6 +7,7 @@ import Courses from './components/Courses'
 import Contact from './components/Contact'
 import Biblioteca from './components/Biblioteca'
 import Viaje from './components/Trip'
+import LevelTest from './components/LevelTest'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/biblioteca" element={<Biblioteca />} />
           <Route path="/trip" element={<Viaje />} />
+          <Route path="/level-test" element={<LevelTest />} />
           { }
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>

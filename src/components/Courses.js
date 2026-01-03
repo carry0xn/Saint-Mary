@@ -137,6 +137,8 @@ function Courses() {
           </h1>
         </div>
 
+        
+
         {/* Course Categories */}
         {courseCategories.map((category, categoryIndex) => (
           <div key={categoryIndex} className="mb-5">
@@ -169,11 +171,31 @@ function Courses() {
                   )}
                 </div>
               ))}
+
             </div>
           </div>
         ))}
         
       </div>
+
+      {/* Level Test Section */}
+        <div className="text-center mb-5">
+          <div className="card border-0 shadow-lg mx-auto" style={{ maxWidth: '600px', background: 'linear-gradient(135deg, #667eea 0%, #001affff 100%)' }}>
+            <div className="card-body py-4">
+              <div className="mb-3">
+                <i className="fas fa-question-circle fa-3x text-white mb-3"></i>
+              </div>
+              <h3 className="text-white mb-3">¿No sabes cuál es tu nivel?</h3>
+              <p className="text-white-50 mb-4">
+                Descubre tu nivel de inglés con nuestro test gratuito. Solo te tomará unos minutos.
+              </p>
+              <Link to="/level-test" className="btn btn-light btn-lg px-4 py-2 fw-bold" style={{ borderRadius: '25px' }}>
+                <i className="fas fa-play-circle me-2"></i>
+                Hacer Test de Nivel
+              </Link>
+            </div>
+          </div>
+        </div>
     </section>
   )
 }
