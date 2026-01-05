@@ -5,6 +5,7 @@ function LevelTest() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [answers, setAnswers] = useState([])
   const [showResults, setShowResults] = useState(false)
+  const [showIntro, setShowIntro] = useState(true)
   const [score, setScore] = useState(0)
 
   const questions = [
@@ -129,9 +130,9 @@ function LevelTest() {
       level: "C2"
     },
     {
-      question: "The politician's speech was full of _____ designed to avoid the real issues.",
-      options: ["euphemisms", "metaphors", "analogies", "platitudes"],
-      correct: 3,
+      question: "The company's financial difficulties were _____ by poor management decisions.",
+      options: ["exacerbated", "alleviated", "mitigated", "facilitated"],
+      correct: 0,
       level: "C2"
     }
   ]
@@ -170,7 +171,90 @@ function LevelTest() {
     setCurrentQuestion(0)
     setAnswers([])
     setShowResults(false)
+    setShowIntro(true)
     setScore(0)
+  }
+
+  const startTest = () => {
+    setShowIntro(false)
+  }
+
+  const goToPrevious = () => {
+    if (currentQuestion > 0) {
+      setCurrentQuestion(currentQuestion - 1)
+      setAnswers(answers.slice(0, -1))
+    }
+  }
+
+  if (showIntro) {
+    return (
+      <section className="py-5" style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="card shadow-lg border-0">
+                <div className="card-body text-center p-5">
+                  <div className="mb-4">
+                    <i className="fas fa-graduation-cap fa-4x text-primary"></i>
+                  </div>
+                  <h1 className="display-4 mb-4 text-primary">Test de Nivel de Inglés</h1>
+                  <p className="lead mb-4">Evalúa tu nivel de inglés con nuestro test profesional</p>
+                  
+                  <div className="row mb-4">
+                    <div className="col-md-4 mb-3">
+                      <div className="p-3 bg-light rounded">
+                        <i className="fas fa-clock fa-2x text-info mb-2"></i>
+                        <h6>Duración</h6>
+                        <p className="mb-0 small">10-15 minutos</p>
+                      </div>
+                    </div>
+                    <div className="col-md-4 mb-3">
+                      <div className="p-3 bg-light rounded">
+                        <i className="fas fa-question-circle fa-2x text-warning mb-2"></i>
+                        <h6>Preguntas</h6>
+                        <p className="mb-0 small">{questions.length} preguntas</p>
+                      </div>
+                    </div>
+                    <div className="col-md-4 mb-3">
+                      <div className="p-3 bg-light rounded">
+                        <i className="fas fa-certificate fa-2x text-success mb-2"></i>
+                        <h6>Niveles</h6>
+                        <p className="mb-0 small">A1 - C2</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="alert alert-info text-start" role="alert">
+                    <h6 className="fw-bold mb-3"><i className="fas fa-info-circle me-2"></i>Instrucciones:</h6>
+                    <ul className="mb-0">
+                      <li>Lee cada pregunta cuidadosamente</li>
+                      <li>Selecciona la opción que consideres correcta</li>
+                      <li>Puedes navegar hacia atrás para revisar respuestas</li>
+                      <li>Al final recibirás tu nivel y recomendaciones</li>
+                      <li>No uses diccionarios ni herramientas de traducción</li>
+                    </ul>
+                  </div>
+
+                  <div className="mt-4">
+                    <button 
+                      onClick={startTest}
+                      className="btn btn-primary btn-lg px-5 py-3 me-3"
+                    >
+                      <i className="fas fa-play me-2"></i>
+                      Comenzar Test
+                    </button>
+                    <Link to="/courses" className="btn btn-outline-secondary btn-lg">
+                      <i className="fas fa-arrow-left me-2"></i>
+                      Volver a Cursos
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
   }
 
   if (showResults) {
@@ -206,12 +290,24 @@ function LevelTest() {
 
                   <div className="alert alert-light border" role="alert">
                     <h6 className="fw-bold">Recomendación:</h6>
-                    {level.level === "A1" && "Te recomendamos nuestros cursos básicos para principiantes."}
-                    {level.level === "A2" && "Te recomendamos nuestros cursos elementales."}
-                    {level.level === "B1" && "Te recomendamos nuestros cursos intermedios."}
-                    {level.level === "B2" && "Te recomendamos nuestros cursos intermedio-avanzado."}
-                    {level.level === "C1" && "Te recomendamos nuestros cursos avanzados y preparación para certificaciones."}
-                    {level.level === "C2" && "¡Excelente! Te recomendamos nuestros cursos de perfeccionamiento y preparación Cambridge."}
+                    {level.level === "A1" && "Te recomendamos nuestros cursos básicos para principiantes. Perfecto para empezar tu aventura con el inglés."}
+                    {level.level === "A2" && "Te recomendamos nuestros cursos elementales. Ya tienes una base, ¡sigamos construyendo!"}
+                    {level.level === "B1" && "Te recomendamos nuestros cursos intermedios. Estás en el camino correcto para dominar el inglés."}
+                    {level.level === "B2" && "Te recomendamos nuestros cursos intermedio-avanzado. ¡Muy buen nivel! Sigamos perfeccionando."}
+                    {level.level === "C1" && "Te recomendamos nuestros cursos avanzados y preparación para certificaciones. Excelente dominio del idioma."}
+                    {level.level === "C2" && "¡Excepcional! Te recomendamos nuestros cursos de perfeccionamiento y preparación Cambridge. Tienes un nivel nativo."}
+                  </div>
+
+                  <div className="mb-4">
+                    <h6 className="fw-bold mb-3">¿Qué significa tu nivel?</h6>
+                    <div className="text-start small text-muted">
+                      {level.level === "A1" && "Puedes entender frases básicas y presentarte. Es el primer paso en tu aprendizaje."}
+                      {level.level === "A2" && "Puedes comunicarte en situaciones simples y hablar de temas familiares."}
+                      {level.level === "B1" && "Puedes manejar situaciones de viaje y expresar opiniones sobre temas conocidos."}
+                      {level.level === "B2" && "Puedes interactuar con fluidez y entender textos complejos sobre temas variados."}
+                      {level.level === "C1" && "Puedes usar el idioma de manera flexible y efectiva para propósitos académicos y profesionales."}
+                      {level.level === "C2" && "Tienes un dominio completo del idioma, comparable al de un hablante nativo educado."}
+                    </div>
                   </div>
 
                   <div className="mt-4">
@@ -238,6 +334,42 @@ function LevelTest() {
 
   return (
     <section className="py-5" style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
+      <style>
+        {`
+          .option-button:hover {
+            background-color: #0d6efd !important;
+            border-color: #0d6efd !important;
+            color: white !important;
+          }
+          
+          .option-button:focus {
+            background-color: white !important;
+            border-color: #0d6efd !important;
+            color: #0d6efd !important;
+            box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+          }
+          
+          .option-button span {
+            color: #0d6efd;
+          }
+          
+          .option-button:hover span {
+            color: white !important;
+          }
+
+          @media (hover: none) and (pointer: coarse) {
+            .option-button:hover {
+              background-color: white !important;
+              border-color: #dee2e6 !important;
+              color: #212529 !important;
+            }
+            
+            .option-button:hover span {
+              color: #0d6efd !important;
+            }
+          }
+        `}
+      </style>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8">
@@ -266,21 +398,15 @@ function LevelTest() {
                     {questions[currentQuestion].options.map((option, index) => (
                       <div key={index} className="col-12">
                         <button
-                          className="btn btn-outline-primary w-100 text-start py-3"
-                          style={{ border: '2px solid #dee2e6', borderRadius: '10px' }}
+                          className="btn btn-outline-primary w-100 text-start py-3 option-button"
+                          style={{ 
+                            border: '2px solid #dee2e6', 
+                            borderRadius: '10px',
+                            transition: 'all 0.3s ease'
+                          }}
                           onClick={() => handleAnswer(index)}
-                          onMouseEnter={(e) => {
-                            e.target.style.backgroundColor = '#0d6efd'
-                            e.target.style.borderColor = '#0d6efd'
-                            e.target.style.color = 'white'
-                          }}
-                          onMouseLeave={(e) => {
-                            e.target.style.backgroundColor = 'white'
-                            e.target.style.borderColor = '#dee2e6'
-                            e.target.style.color = 'black'
-                          }}
                         >
-                          <span className="me-3 fw-bold text-primary">
+                          <span className="me-3 fw-bold">
                             {String.fromCharCode(65 + index)}.
                           </span>
                           {option}
@@ -290,11 +416,27 @@ function LevelTest() {
                   </div>
                 </div>
 
-                <div className="text-center mt-4">
+                <div className="d-flex justify-content-between align-items-center mt-4">
+                  <div>
+                    {currentQuestion > 0 && (
+                      <button 
+                        onClick={goToPrevious}
+                        className="btn btn-outline-secondary"
+                      >
+                        <i className="fas fa-arrow-left me-2"></i>
+                        Anterior
+                      </button>
+                    )}
+                  </div>
+                  
                   <Link to="/courses" className="text-muted text-decoration-none">
-                    <i className="fas fa-arrow-left me-2"></i>
-                    Volver a Cursos
+                    <i className="fas fa-times me-2"></i>
+                    Salir del Test
                   </Link>
+                  
+                  <div className="text-muted small">
+                    {currentQuestion > 0 ? `${currentQuestion} respuestas guardadas` : 'Primera pregunta'}
+                  </div>
                 </div>
               </div>
             </div>
