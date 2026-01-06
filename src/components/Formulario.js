@@ -3,13 +3,14 @@ import emailjs from 'emailjs-com'
 
 const Formulario = () => {
   const [formData, setFormData] = useState({
-    nombre: '',
+    name: '',
     email: '',
     edad: '',
-    mensaje: '',
+    message: '',
   })
 
   const [mensaje, setMensaje] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -18,11 +19,40 @@ const Formulario = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    setIsLoading(true)
+    setMensaje('')
 
-    emailjs.send('service_lrblhla', 'template_p5buyb9', formData, 'DtRM4AG326nzTI_g5').then((response) => {
-        setMensaje('¡Mensaje enviado con éxito!');
-      }, (error) => {
+    // Preparar los datos para el template
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      edad: formData.edad,
+      message: formData.message,
+    }
+
+    console.log('Enviando datos:', templateParams)
+
+    // Inicializar EmailJS con la Public Key
+    emailjs.init('tn67V_yJBnwvsa-qT')
+    
+    // Verificar que EmailJS esté inicializado
+    emailjs.send('service_je2jrv4', 'template_lzyonhv', templateParams)
+      .then((response) => {
+        console.log('Correo enviado correctamente:', response.status, response.text)
+        setMensaje('¡Mensaje enviado con éxito!')
+        // Limpiar formulario
+        setFormData({
+          name: '',
+          email: '',
+          edad: '',
+          message: '',
+        })
+        setIsLoading(false)
+      })
+      .catch((error) => {
+        console.error('Error al enviar el correo:', error)
         setMensaje('Hubo un error al enviar el mensaje. Inténtalo de nuevo.')
+        setIsLoading(false)
       })
   }
 
@@ -31,13 +61,13 @@ const Formulario = () => {
       <form onSubmit={handleSubmit} className="bg-white p-4 rounded shadow">
         <h2 className="text-center mb-4">Contáctanos</h2>
         <div className="mb-3">
-          <label htmlFor="nombre" className="form-label">Nombre:</label>
+          <label htmlFor="name" className="form-label">Nombre:</label>
           <input
             type="text"
-            id="nombre"
-            name="nombre"
+            id="name"
+            name="name"
             className="form-control"
-            value={formData.nombre}
+            value={formData.name}
             onChange={handleChange}
             required
           />
@@ -72,21 +102,29 @@ const Formulario = () => {
           </select>
         </div>
         <div className="mb-3">
-          <label htmlFor="mensaje" className="form-label">Mensaje:</label>
+          <label htmlFor="message" className="form-label">Mensaje:</label>
           <textarea
-            id="mensaje"
-            name="mensaje"
+            id="message"
+            name="message"
             className="form-control"
             rows="4"
-            value={formData.mensaje}
+            value={formData.message}
             onChange={handleChange}
             required
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary w-100">Enviar</button>
+        <button 
+          type="submit" 
+          className="btn btn-primary w-100"
+          disabled={isLoading}
+        >
+          {isLoading ? 'Enviando...' : 'Enviar'}
+        </button>
       </form>
       {mensaje && (
-        <p className="text-center mt-3 alert alert-info">{mensaje}</p>
+        <p className={`text-center mt-3 alert ${mensaje.includes('éxito') ? 'alert-success' : 'alert-danger'}`}>
+          {mensaje}
+        </p>
       )}
     </div>
   )
